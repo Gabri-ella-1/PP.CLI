@@ -1,0 +1,12 @@
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/bin/Debug/net7.0/PP.Library.deps.json
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/bin/Debug/net7.0/PP.Library.dll
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/bin/Debug/net7.0/PP.Library.pdb
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/PP.Library.csproj.AssemblyReference.cache
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/PP.Library.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/PP.Library.AssemblyInfoInputs.cache
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/PP.Library.AssemblyInfo.cs
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/PP.Library.csproj.CoreCompileInputs.cache
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/PP.Library.dll
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/refint/PP.Library.dll
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/PP.Library.pdb
+/Users/ellaestevez/Projects/PP.CLI/PP.Library/obj/Debug/net7.0/ref/PP.Library.dll

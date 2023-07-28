@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Linq;
-using PP.CLI.Models;
-using PP.CLI.Services;
+using PP.Library.Models;
+using PP.Library.Services;
 
 
 namespace Practice // Note: actual namespace depends on the project name.

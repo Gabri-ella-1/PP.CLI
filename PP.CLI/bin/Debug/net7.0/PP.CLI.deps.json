@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "PP.CLI/1.0.0": {
+        "dependencies": {
+          "PP.Library": "1.0.0"
+        },
+        "runtime": {
+          "PP.CLI.dll": {}
+        }
+      },
+      "PP.Library/1.0.0": {
+        "runtime": {
+          "PP.Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PP.CLI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PP.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
