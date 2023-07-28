@@ -17,7 +17,7 @@ namespace PP.Library.Models
 
         }
 
-
+        /*
         public string Display
         {
             get
@@ -25,6 +25,7 @@ namespace PP.Library.Models
                 return ToString();
             }
         }
+        */
     }
 
 

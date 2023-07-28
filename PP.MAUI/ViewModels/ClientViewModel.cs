@@ -13,29 +13,39 @@ using System.Windows.Input;
 
 namespace PP.MAUI.ViewModels
 {
-    public class ClientViewModel : INotifyPropertyChanged
+    public class ClientViewModel 
 
     {
-        public Client SelectedClient { get; set; }
+        //public Client SelectedClient { get; set; }
+        public Client Model { get; set; }
 
-
-        public ObservableCollection<Client> Clients
+        //public ObservableCollection<Client> Clients
+        public string Display
         {
             get
             {
-                return new ObservableCollection<Client>(ClientService.Current.Clients);
+                //return new ObservableCollection<Client>(ClientService.Current.Clients);
+                return Model.ToString() ?? string.Empty;
             }
         }
 
 
-
+        /*
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        */
 
+        public ICommand DeleteCommand { get; private set; }
+
+        public void ExecuteDelete(int id)
+        {
+
+            ClientService.Current.Delete(id);
+        }
         /*
         public string Query { get; set; }
 
@@ -44,6 +54,7 @@ namespace PP.MAUI.ViewModels
             NotifyPropertyChanged("Clients");
         }
         */
+        /*
         public void Delete()
         {
 
@@ -54,17 +65,25 @@ namespace PP.MAUI.ViewModels
                     Console.WriteLine(SelectedClient.Id);
                     NotifyPropertyChanged(nameof(Clients));
                     //SelectedClient = null;
-                    // NotifyPropertyChanged(nameof(Clients));*/
+                    // NotifyPropertyChanged(nameof(Clients));
                 ClientService.Current.Delete(SelectedClient.Id);
                 SelectedClient = null;
                 NotifyPropertyChanged(nameof(Clients));
                 NotifyPropertyChanged(nameof(SelectedClient));
             }
+   */
+        // NotifyPropertyChanged(nameof(Clients));
 
-            // NotifyPropertyChanged(nameof(Clients));
 
-
+        public ClientViewModel(Client client)
+        {
+            Model = client;
+            DeleteCommand = new Command(
+                (c) => ExecuteDelete((c as ClientViewModel).Model.Id));
         }
+
+
+
 
         //public Client SelectedClient { get; set; }
 

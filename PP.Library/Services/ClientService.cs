@@ -79,20 +79,43 @@ namespace PP.Library.Services
         {
 
 
-            Console.WriteLine(id);
+            //Console.WriteLine(id);
 
 
             var clientToDelete = Clients.FirstOrDefault(c => c.Id == id);
-            Console.WriteLine("This is for client services: ");
-            Console.WriteLine(clientToDelete);
+            //Console.WriteLine("This is for client services: ");
+            //Console.WriteLine(clientToDelete);
             if (clientToDelete != null)
             {
-                Console.WriteLine("went through");
+                //Console.WriteLine("went through");
                 Clients.Remove(clientToDelete);
                 //Read();
 
             }
         }
+
+
+        public void Add(Client c)
+        {
+            if (c.Id == 0)
+            {
+                //add
+                c.Id = LastId + 1;
+            }
+
+            Clients.Add(c);
+        }
+
+        public int LastId
+        {
+            get
+            {
+                return Clients.Any() ? Clients.Select(c => c.Id).Max() : 1;
+            }
+        }
+
+
+
 
         /*
         public void Delete(Client s)
