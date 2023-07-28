@@ -30,14 +30,7 @@ namespace PP.MAUI.ViewModels
         }
 
 
-        /*
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        */
+       
 
         public ICommand DeleteCommand { get; private set; }
 
@@ -46,33 +39,7 @@ namespace PP.MAUI.ViewModels
 
             ClientService.Current.Delete(id);
         }
-        /*
-        public string Query { get; set; }
-
-        public void Search()
-        {
-            NotifyPropertyChanged("Clients");
-        }
-        */
-        /*
-        public void Delete()
-        {
-
-            if (SelectedClient != null)
-            {/*
-                    Console.WriteLine("DELETED");
-                    ClientService.Current.Delete(SelectedClient.Id);
-                    Console.WriteLine(SelectedClient.Id);
-                    NotifyPropertyChanged(nameof(Clients));
-                    //SelectedClient = null;
-                    // NotifyPropertyChanged(nameof(Clients));
-                ClientService.Current.Delete(SelectedClient.Id);
-                SelectedClient = null;
-                NotifyPropertyChanged(nameof(Clients));
-                NotifyPropertyChanged(nameof(SelectedClient));
-            }
-   */
-        // NotifyPropertyChanged(nameof(Clients));
+        
 
 
         public ClientViewModel(Client client)
@@ -82,10 +49,20 @@ namespace PP.MAUI.ViewModels
                 (c) => ExecuteDelete((c as ClientViewModel).Model.Id));
         }
 
+        public ClientViewModel()
+        {
+            Model = new Client();
+            DeleteCommand = new Command(
+                (c) => ExecuteDelete((c as ClientViewModel).Model.Id));
+        }
+
+        public void Add()
+        {
+            ClientService.Current.Add(Model);
+        }
 
 
-
-        //public Client SelectedClient { get; set; }
+      
 
 
 

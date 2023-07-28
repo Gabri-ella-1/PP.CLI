@@ -12,7 +12,8 @@ public partial class ClientView : ContentPage
 
     private void SearchClicked(object sender, EventArgs e)
     {
-        //(BindingContext as ClientViewModel).Search();
+        (BindingContext as ClientViewViewModel).Search();
+        //(BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
 
@@ -25,7 +26,12 @@ public partial class ClientView : ContentPage
 
     private void AddClicked(System.Object sender, System.EventArgs e)
     {
-       // Shell.Current.GoToAsync("//Add");
+        Shell.Current.GoToAsync("//Add");
+    }
+
+    private void OnArrived(object sender, NavigatedToEventArgs e)
+    {
+        (BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
     private void EditClicked(System.Object sender, System.EventArgs e)

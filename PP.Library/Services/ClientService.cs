@@ -106,15 +106,20 @@ namespace PP.Library.Services
             Clients.Add(c);
         }
 
-        public int LastId
+        private int LastId
         {
             get
             {
-                return Clients.Any() ? Clients.Select(c => c.Id).Max() : 1;
+                return Clients.Any() ? Clients.Select(c => c.Id).Max() : 0;
             }
         }
 
-
+        public IEnumerable<Client> Search(string query)
+        {
+            return Clients
+                .Where(c => c.Name.ToUpper()
+                    .Contains(query.ToUpper()));
+        }
 
 
         /*

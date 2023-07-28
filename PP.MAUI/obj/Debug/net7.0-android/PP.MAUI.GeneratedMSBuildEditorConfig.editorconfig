@@ -44,6 +44,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = PP.MAUI.Resources.Styles.S
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
+[/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/Views/AddView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PP.MAUI.Views.AddView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AddView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AddView.xaml
+
 [/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/Views/ClientView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PP.MAUI.Views.ClientView.xaml

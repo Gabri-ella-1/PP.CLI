@@ -9,13 +9,14 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+//using static Android.Graphics.ColorSpace;
 
 namespace PP.MAUI.ViewModels
 {
     public class ClientViewViewModel : INotifyPropertyChanged
     {
         public Client SelectedClient { get; set; }
-
+        public string Query { get; set; }
         public ObservableCollection<ClientViewModel> Clients
         {
             get
@@ -23,8 +24,15 @@ namespace PP.MAUI.ViewModels
                 return
                     new ObservableCollection<ClientViewModel>
                     (ClientService
-                        .Current.Clients.Select(c => new ClientViewModel(c)).ToList());
+                    .Current.Search(Query ?? string.Empty)
+                        .Select(c => new ClientViewModel(c)).ToList());
+                //.Current.Clients.Select(c => new ClientViewModel(c)).ToList());
             }
+        }
+
+        public void Search()
+        {
+            NotifyPropertyChanged("Clients");
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -44,6 +52,8 @@ namespace PP.MAUI.ViewModels
                 NotifyPropertyChanged(nameof(SelectedClient));
             }
         }
+
+       
 
         public void RefreshClientList()
         {

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Shell
     x:Class="PP.MAUI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -15,5 +15,10 @@
         Title="Client Managment"
         ContentTemplate="{DataTemplate local2:ClientView}"
         Route="Clients" />
+    <ShellContent
+        Title="Client Add"
+        ContentTemplate="{DataTemplate local2:AddView}"
+        Route="Add" />
+
 </Shell>
 
