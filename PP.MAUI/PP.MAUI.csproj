@@ -57,8 +57,13 @@
 
 	<ItemGroup>
 	  <None Remove="Views\" />
+	  <None Remove="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
+	  <Folder Include="ViewModels\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\PP.Library\PP.Library.csproj" />
 	</ItemGroup>
 </Project>

@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/PP.Library.dll": {}
         }
+      },
+      "PP.MAUI/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/PP.MAUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PP.MAUI.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../PP.Library/PP.Library.csproj",
       "msbuildProject": "../PP.Library/PP.Library.csproj"
+    },
+    "PP.MAUI/1.0.0": {
+      "type": "project",
+      "path": "../PP.MAUI/PP.MAUI.csproj",
+      "msbuildProject": "../PP.MAUI/PP.MAUI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "PP.Library >= 1.0.0"
+      "PP.Library >= 1.0.0",
+      "PP.MAUI >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -54,6 +70,9 @@
           "projectReferences": {
             "/Users/ellaestevez/Projects/PP.CLI/PP.Library/PP.Library.csproj": {
               "projectPath": "/Users/ellaestevez/Projects/PP.CLI/PP.Library/PP.Library.csproj"
+            },
+            "/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/PP.MAUI.csproj": {
+              "projectPath": "/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/PP.MAUI.csproj"
             }
           }
         }
@@ -86,5 +105,16 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project PP.MAUI is not compatible with net7.0 (.NETCoreApp,Version=v7.0). Project PP.MAUI supports:\n  - net7.0-android33.0 (.NETCoreApp,Version=v7.0)\n  - net7.0-ios16.1 (.NETCoreApp,Version=v7.0)\n  - net7.0-maccatalyst16.1 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "PP.MAUI",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

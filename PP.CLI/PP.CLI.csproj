@@ -9,5 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PP.Library\PP.Library.csproj" />
+    <ProjectReference Include="..\PP.MAUI\PP.MAUI.csproj" />
   </ItemGroup>
 </Project>

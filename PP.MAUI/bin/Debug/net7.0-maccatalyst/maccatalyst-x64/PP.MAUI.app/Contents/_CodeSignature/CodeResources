@@ -194,18 +194,32 @@
 			iBN9Roh3QKfqAl7exk4k9PO1tyU5YxbrSVH6xq4eHss=
 			</data>
 		</dict>
+		<key>MonoBundle/PP.Library.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G0FlyzEdDHjpevdn/DG63CzZH83UBbZXM5EkK5Pdqgw=
+			</data>
+		</dict>
+		<key>MonoBundle/PP.Library.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4Da4moiwVn7PBZRNKAzmXIcSIBds+0piSqLWWXg+PN8=
+			</data>
+		</dict>
 		<key>MonoBundle/PP.MAUI.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bKLlNVW8Pg2cUnVm6dQ6p5XGD3ifSg2aiR1NwDz+f7E=
+			CPhyQnivz7If6hWxrxgWsgsUyzmB9tm8lgVp0UXZCEk=
 			</data>
 		</dict>
 		<key>MonoBundle/PP.MAUI.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OWbqeydg8r8DQkfkS7p7FGoHd93k0YnUibTTycWRCos=
+			aqfVeylxuEegDztFJGmFfY+4lsudRWTQA9qzUSwKJn0=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>

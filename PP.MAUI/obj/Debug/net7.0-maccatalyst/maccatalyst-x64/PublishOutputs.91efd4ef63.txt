@@ -9,6 +9,7 @@
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/Microsoft.Extensions.Options.dll
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
+/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/PP.Library.dll
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/PP.MAUI.dll
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll
@@ -185,6 +186,7 @@
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/Microsoft.Maui.Controls.dll
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/Microsoft.Maui.Essentials.dll
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/PP.MAUI.pdb
+/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/PP.Library.pdb
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/libSystem.IO.Compression.Native.dylib
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/libSystem.Native.dylib
 /Users/ellaestevez/Projects/PP.CLI/PP.MAUI/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../PP.MAUI.app/Contents/MonoBundle/libSystem.Net.Security.Native.dylib
