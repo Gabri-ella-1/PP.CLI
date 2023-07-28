@@ -101,9 +101,15 @@ namespace PP.Library.Services
             {
                 //add
                 c.Id = LastId + 1;
+                Clients.Add(c);
             }
 
-            Clients.Add(c);
+           
+        }
+
+        public Client? Get(int id)
+        {
+            return Clients.FirstOrDefault(c => c.Id == id);
         }
 
         private int LastId

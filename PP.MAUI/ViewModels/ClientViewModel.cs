@@ -39,7 +39,12 @@ namespace PP.MAUI.ViewModels
 
             ClientService.Current.Delete(id);
         }
-        
+
+        public ICommand EditCommand { get; private set; }
+
+        public void ExecuteEdit(int id) {
+            Shell.Current.GoToAsync($"//Add?clientId={id}");
+        }
 
 
         public ClientViewModel(Client client)
@@ -47,13 +52,32 @@ namespace PP.MAUI.ViewModels
             Model = client;
             DeleteCommand = new Command(
                 (c) => ExecuteDelete((c as ClientViewModel).Model.Id));
+
+            EditCommand = new Command(
+               (c) => ExecuteEdit((c as ClientViewModel).Model.Id));
         }
+
+        public ClientViewModel(int clientId)
+        {
+            Model = ClientService.Current.Get(clientId);
+            DeleteCommand = new Command(
+                (c) => ExecuteDelete((c as ClientViewModel).Model.Id));
+
+            EditCommand = new Command(
+               (c) => ExecuteEdit((c as ClientViewModel).Model.Id));
+        }
+
 
         public ClientViewModel()
         {
             Model = new Client();
             DeleteCommand = new Command(
                 (c) => ExecuteDelete((c as ClientViewModel).Model.Id));
+
+            EditCommand = new Command(
+                (c) => ExecuteEdit((c as ClientViewModel).Model.Id));
+
+
         }
 
         public void Add()

@@ -16,7 +16,13 @@ namespace PP.MAUI.ViewModels
     public class ClientViewViewModel : INotifyPropertyChanged
     {
         public Client SelectedClient { get; set; }
+
+
+
         public string Query { get; set; }
+
+
+
         public ObservableCollection<ClientViewModel> Clients
         {
             get
