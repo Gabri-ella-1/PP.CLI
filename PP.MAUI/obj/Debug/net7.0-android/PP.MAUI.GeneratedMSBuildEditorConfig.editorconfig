@@ -55,3 +55,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PP.MAUI.Views.ClientView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/ClientView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/ClientView.xaml
+
+[/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/Views/ProjectDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PP.MAUI.Views.ProjectDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ProjectDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ProjectDetailView.xaml
+
+[/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/Views/ProjectView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PP.MAUI.Views.ProjectView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ProjectView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ProjectView.xaml

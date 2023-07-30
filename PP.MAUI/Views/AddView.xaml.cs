@@ -11,12 +11,12 @@ public partial class AddView : ContentPage
 	public AddView()
 	{
 		InitializeComponent();
-        BindingContext = new ClientViewModel();
+        //BindingContext = new ClientViewModel();
     }
 
     private void AddClientClicked(object sender, EventArgs e)
     {
-        (BindingContext as ClientViewModel).Add();
+       (BindingContext as ClientViewModel).AddorUpdate(ClientId);
         Shell.Current.GoToAsync("//Clients");
     }
 
@@ -28,6 +28,7 @@ public partial class AddView : ContentPage
     private void OnArriving(object sender, NavigatedToEventArgs e)
     {
         BindingContext = new ClientViewModel(ClientId);
+        //(BindingContext as ClientViewModel).RefreshProjects();
     }
 
 }

@@ -1,23 +1,47 @@
 ﻿<Properties StartupConfiguration="{40430006-8FD6-4873-AA34-F09FA71FB9AC}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PP.CLI/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PP.MAUI/ViewModels/ClientViewModel.cs">
     <Files>
-      <File FileName="PP.CLI/Program.cs" Line="33" Column="65" />
-      <File FileName="PP.CLI/Models/Clients.cs" />
-      <File FileName="PP.CLI/Models/Employee.cs" />
-      <File FileName="PP.CLI/Models/Project.cs" />
-      <File FileName="PP.CLI/Models/Time.cs" Line="12" Column="2" />
-      <File FileName="PP.CLI/Services/ClientService.cs" />
-      <File FileName="PP.CLI/Services/ProjectService.cs" />
-      <File FileName="PP.CLI/PP.CLI.csproj" />
+      <File FileName="PP.MAUI/Views/AddView.xaml.cs" Line="19" Column="1" />
+      <File FileName="PP.MAUI/Views/AddView.xaml" Line="18" Column="38" />
+      <File FileName="PP.MAUI/Views/ProjectDetailView.xaml" Line="21" Column="15" />
+      <File FileName="PP.MAUI/Views/ProjectDetailView.xaml.cs" Line="16" Column="34" />
+      <File FileName="PP.MAUI/ViewModels/ClientViewModel.cs" Line="135" Column="1" />
+      <File FileName="PP.MAUI/Views/ClientView.xaml" Line="59" Column="37" />
+      <File FileName="PP.MAUI/Views/ClientView.xaml.cs" Line="55" Column="2" />
+      <File FileName="PP.MAUI/App.xaml" Line="1" Column="1" />
+      <File FileName="PP.MAUI/AppShell.xaml" Line="33" Column="1" />
+      <File FileName="PP.MAUI/ViewModels/ProjectViewModel.cs" Line="33" Column="10" />
+      <File FileName="PP.MAUI/ViewModels/ClientViewViewModel.cs" Line="1" Column="1" />
+      <File FileName="PP.MAUI/ViewModels/ProjectViewViewModel.cs" Line="35" Column="17" />
+      <File FileName="PP.MAUI/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="PP.MAUI/Views/ProjectView.xaml" Line="18" Column="15" />
+      <File FileName="PP.MAUI/Views/ProjectView.xaml.cs" Line="18" Column="2" />
+      <File FileName="PP.Library/Services/ClientService.cs" Line="100" Column="28" />
+      <File FileName="PP.Library/PP.Library.csproj" Line="1" Column="1" />
+      <File FileName="PP.Library/Models/Clients.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PP.CLI">
-            <Node name="PP.CLI" expanded="True">
+          <Node name="PP.CLI" expanded="True">
+            <Node name="PP.Library">
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="PP.MAUI">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Platforms" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Raw" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="ClientViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="AddView.xaml" expanded="True" />
+                <Node name="ClientView.xaml" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -27,7 +51,11 @@
   <MonoDevelop.Ide.ItemProperties.PP.CLI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.PP.MAUI PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ellaestevez/Projects/PP.CLI/PP.MAUI/Views/AddView.xaml.cs" relfile="PP.MAUI/Views/AddView.xaml.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -95,16 +95,29 @@ namespace PP.Library.Services
         }
 
 
-        public void Add(Client c)
+        public void AddorUpdate(string name, int id)
         {
-            if (c.Id == 0)
+            Console.WriteLine("Testing");
+
+            
+
+            if (id == 0)
             {
                 //add
-                c.Id = LastId + 1;
-                Clients.Add(c);
+                id = LastId + 1;
+                //Clients.Add(c);
+                Clients.Add(new Client {
+                    Id = id,
+                    Name = name,
+                    Notes =  "n/a",
+                    OpenDate = DateTime.Now,
+                    ClosedDate = null,
+                    IsActive = true
+
+                } );
             }
 
-           
+          
         }
 
         public Client? Get(int id)

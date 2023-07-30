@@ -19,6 +19,14 @@
         Title="Client Add"
         ContentTemplate="{DataTemplate local2:AddView}"
         Route="Add" />
+    <ShellContent
+        Title="Project Details"
+        ContentTemplate="{DataTemplate local2:ProjectDetailView}"
+        Route="ProjectDetail" />
+    <ShellContent
+        Title="Project Managment"
+        ContentTemplate="{DataTemplate local2:ProjectDetailView}"
+        Route="Projects" />
 
 </Shell>
 

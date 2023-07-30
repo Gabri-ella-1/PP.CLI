@@ -22,6 +22,7 @@
                     
             <Button Grid.Column="2"
                    Text="Add"
+                    
                    Clicked="AddClicked"></Button>
         </Grid>
         <ListView 
@@ -37,6 +38,7 @@
                                 <ColumnDefinition Width="12*"/>
                                 <ColumnDefinition/>
                                  <ColumnDefinition/>
+                                <ColumnDefinition/>
                                
                             </Grid.ColumnDefinitions>
                             <Label Grid.Column="0"  Text="{Binding Path=Display}"/>
@@ -51,6 +53,11 @@
                                     Command="{Binding Path=EditCommand}" 
                                     CommandParameter="{Binding}"
                                     Clicked="EditClicked"/>
+                            <Button Grid.Column="3" 
+                                    Text="Project" 
+                                    Command="{Binding Path=ShowProjectCommand}" 
+                                    CommandParameter="{Binding}"
+                                    Clicked="ProjectsClicked"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

@@ -15,7 +15,7 @@ namespace PP.Library.Models
 
         public override string ToString()
         {
-            return $"{Id}. {ShortName}.{LongName}. {OpenDate}. {ClosedDate}. {ClientId}";
+            return $"{ShortName}.{LongName}. {OpenDate}. {ClosedDate}";
 
         }
     }
