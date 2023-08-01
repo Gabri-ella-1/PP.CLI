@@ -13,7 +13,7 @@
             <Label Grid.Column="0"
             Padding="10"
             Text="Name" />
-            <Entry Grid.Column="1" Text="{Binding Path=Name}"/>
+            <Entry Grid.Column="1" Text="{Binding Path=Model.Name}"/>
         </Grid>
         <Grid Padding="5" Margin="5">
             <Label Text="Projects:"></Label>
@@ -27,26 +27,18 @@
                 </Grid.ColumnDefinitions>
                 <Entry Grid.Column="0"></Entry>
                 <Button Grid.Column="1" Text="Search"></Button>
-                <Button Grid.Column="2" Text="Add Project" Command="{Binding AddProjectCommand}"></Button>
+                <Button Grid.Column="2" Text="Add Project"
+                        Command="{Binding AddProjectCommand}"
+                        
+                       
+
+                        ></Button>
             </Grid>
         </Grid>
         <ListView
             ItemsSource="{Binding Projects}"
             >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="12*"/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" VerticalTextAlignment="Center" Text="{Binding Display}"></Label>
-                            <Button Grid.Column="1" Text="Timer" />
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+            
         </ListView>
         <Button Text="OK" Clicked="AddClientClicked"/>
         <Button Text="Cancel" Clicked="CancelClicked"/>

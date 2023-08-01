@@ -16,7 +16,7 @@ public partial class AddView : ContentPage
 
     private void AddClientClicked(object sender, EventArgs e)
     {
-       (BindingContext as ClientViewModel).AddorUpdate(ClientId);
+       (BindingContext as ClientViewModel).AddorUpdate();
         Shell.Current.GoToAsync("//Clients");
     }
 
@@ -25,10 +25,20 @@ public partial class AddView : ContentPage
         Shell.Current.GoToAsync("//Clients");
     }
 
+    private void AddProjectClicked(System.Object sender, System.EventArgs e)
+    {
+        //Shell.Current.GoToAsync("//Clients");
+        (BindingContext as ClientViewModel).RefreshProjects();
+    }
+
+
+    //TODO: Need to change addor update back to model.id to fix projects
+   
+
     private void OnArriving(object sender, NavigatedToEventArgs e)
     {
         BindingContext = new ClientViewModel(ClientId);
-        //(BindingContext as ClientViewModel).RefreshProjects();
+        (BindingContext as ClientViewModel).RefreshProjects();
     }
 
 }

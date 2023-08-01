@@ -28,6 +28,7 @@ public partial class ClientView : ContentPage
     {
         Shell.Current.GoToAsync("//Add");
         //(BindingContext as ClientViewViewModel).RefreshClientList();
+        //(BindingContext as ClientViewViewModel).RefreshClientList();
     }
 
     private void OnArrived(object sender, NavigatedToEventArgs e)
@@ -43,7 +44,8 @@ public partial class ClientView : ContentPage
 
     private void ProjectsClicked(System.Object sender, System.EventArgs e)
     {
-        (BindingContext as ClientViewViewModel).RefreshClientList();
+          (BindingContext as ClientViewViewModel).RefreshClientList();
+        //Shell.Current.GoToAsync("//Projects");
 
     }
 

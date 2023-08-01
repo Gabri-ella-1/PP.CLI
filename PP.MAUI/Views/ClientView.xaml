@@ -22,7 +22,8 @@
                     
             <Button Grid.Column="2"
                    Text="Add"
-                    
+                    Command="{Binding Path=AddCommand}" 
+                                    CommandParameter="{Binding}"
                    Clicked="AddClicked"></Button>
         </Grid>
         <ListView 
@@ -54,8 +55,8 @@
                                     CommandParameter="{Binding}"
                                     Clicked="EditClicked"/>
                             <Button Grid.Column="3" 
-                                    Text="Project" 
-                                    Command="{Binding Path=ShowProjectCommand}" 
+                                    Text="Projects" 
+                                    Command="{Binding Path=ShowProjectsCommand}" 
                                     CommandParameter="{Binding}"
                                     Clicked="ProjectsClicked"/>
                         </Grid>

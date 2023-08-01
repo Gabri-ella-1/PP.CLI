@@ -16,17 +16,14 @@ namespace PP.MAUI.ViewModels
     public class ClientViewModel : INotifyPropertyChanged
 
     {
-        public string Name { get; set; } 
-
-        //public Client SelectedClient { get; set; }
         public Client Model { get; set; }
 
-        //public ObservableCollection<Client> Clients
+        
         public string Display
         {
             get
             {
-                //return new ObservableCollection<Client>(ClientService.Current.Clients);
+                
                 return Model.ToString() ?? string.Empty;
             }
         }
@@ -62,8 +59,16 @@ namespace PP.MAUI.ViewModels
 
         public ICommand EditCommand { get; private set; }
 
+        public ICommand AddCommand { get; private set; }
+
         public void ExecuteEdit(int id) {
             Shell.Current.GoToAsync($"//Add?clientId={id}");
+        }
+
+        public void ExecuteAdd()
+        {
+            Shell.Current.GoToAsync($"//Add?clientId={Model.Id}");
+            ClientService.Current.AddorUpdate(Model.Name, Model.Id);
         }
 
 
@@ -74,13 +79,16 @@ namespace PP.MAUI.ViewModels
             EditCommand = new Command(
                (c) => ExecuteEdit((c as ClientViewModel).Model.Id));
 
-           
-
             AddProjectCommand = new Command(
-                (c) => ExecuteAddProject());
+               (c) => ExecuteAddProject());
+
+            AddCommand = new Command(
+               (c) => ExecuteAdd());
+
+
 
             ShowProjectsCommand = new Command(
-                (c) => ExecuteShowProjects((c as ClientViewModel).Model.Id));
+               (c) => ExecuteShowProjects((c as ClientViewModel).Model.Id));
         }
 
         public ICommand AddProjectCommand { get; private set; }
@@ -122,11 +130,11 @@ namespace PP.MAUI.ViewModels
             SetupCommands();
         }
 
-        public void AddorUpdate(int clientId)
+        public void AddorUpdate()
         {
             
             
-            ClientService.Current.AddorUpdate(Name, clientId);
+            ClientService.Current.AddorUpdate(Model.Name, Model.Id);
         }
 
 
@@ -138,12 +146,13 @@ namespace PP.MAUI.ViewModels
 
         public void ExecuteAddProject()
         {
+            //Console.WriteLine(Model.Id);
 
-
-            //AddorUpdate(); //save the client so that we have an id to link the project to
+           
+            AddorUpdate(); //save the client so that we have an id to link the project to
             //TODO: if we cancel the creation of this client, we need to delete it on cancel.
             //Shell.Current.GoToAsync($"//ProjectDetail?clientId={Model.Id}");
-
+            Shell.Current.GoToAsync($"//ProjectDetail?clientId={Model.Id}");
 
         }
 

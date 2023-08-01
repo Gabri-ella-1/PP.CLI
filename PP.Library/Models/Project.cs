@@ -9,13 +9,13 @@ namespace PP.Library.Models
         public DateTime OpenDate { get; set; }
         public DateTime? ClosedDate { get; set; }
         public Boolean IsActive { get; set; }
-        public String? ShortName { get; set; }
+        public String? Name { get; set; }
         public String? LongName { get; set; }
         public int ClientId { get; set; }
 
         public override string ToString()
         {
-            return $"{ShortName}.{LongName}. {OpenDate}. {ClosedDate}";
+            return $"{Name}.{LongName}. {OpenDate}. {ClosedDate}";
 
         }
     }
